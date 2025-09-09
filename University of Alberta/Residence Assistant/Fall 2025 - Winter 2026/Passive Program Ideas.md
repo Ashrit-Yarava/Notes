@@ -1,0 +1,7 @@
+- Poster: Events around campus (for the semester): A quick summary of the events around campus.
+- Notes for floor: Welcome to Residence (with candy):
+	- Origami Paper Bag?
+- Movie/Tv Show/Book Recommendations:
+	- Multiple posters.
+	- Every week for the month, go around and sync up all the notes so that all the residents (8901 - 8905) can see all of them.
+- 

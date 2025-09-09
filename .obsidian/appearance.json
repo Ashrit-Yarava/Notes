@@ -1,0 +1,10 @@
+{
+  "accentColor": "",
+  "cssTheme": "Catppuccin",
+  "interfaceFontFamily": "SF Mono",
+  "baseFontSize": 16,
+  "showRibbon": false,
+  "showViewHeader": false,
+  "textFontFamily": "SF Mono",
+  "monospaceFontFamily": "SF Mono"
+}

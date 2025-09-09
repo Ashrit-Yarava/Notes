@@ -1,0 +1,75 @@
+filters:
+  and:
+    - file.folder == "Research Papers"
+    - file.ext == "md"
+properties:
+  file.name:
+    displayName: Title
+views:
+  - type: table
+    name: Table
+    order:
+      - Read
+      - file.name
+      - Author
+      - Year
+      - tags
+      - file.ctime
+    sort:
+      - property: file.ctime
+        direction: DESC
+      - property: Author
+        direction: ASC
+      - property: Year
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 771
+      note.Author: 244
+      note.Year: 171
+  - type: table
+    name: Fault Localization
+    order:
+      - file.name
+      - file.tags
+      - file.ctime
+    sort:
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      file.name: 665
+  - type: table
+    name: To Read
+    filters:
+      and:
+        - Read == null
+    order:
+      - Read
+      - file.name
+      - Author
+      - Year
+      - tags
+      - file.ctime
+    sort:
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      file.name: 888
+  - type: table
+    name: Test Generation
+    filters:
+      and:
+        - file.hasTag("testgeneration")
+    order:
+      - Read
+      - file.name
+      - Author
+      - Year
+      - tags
+    sort:
+      - property: Year
+        direction: ASC
+    columnSize:
+      file.name: 636
+      note.Author: 167

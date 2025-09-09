@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "3b6d3e52055cf21d",
+    "type": "split",
+    "children": [
+      {
+        "id": "a0140fafd12166fb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "18a89c7e6149278c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Research Papers/An empirical study of fault localization families and their combinations.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "An empirical study of fault localization families and their combinations"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2a60cbdf1fdcff31",
+    "type": "split",
+    "children": [
+      {
+        "id": "513cc643c4cece23",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "938810cd841e067e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "21d71a6085e318cd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "maximize",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c75dd014ba3eecc0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 317
+  },
+  "right": {
+    "id": "70d662f750d58879",
+    "type": "split",
+    "children": [
+      {
+        "id": "30f1b858cf00f9f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c760d4d6bdbd53e8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Papers/SoapFL - A Standard Operating Procedure for LLM Based Method-Level Fault Localization.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for SoapFL - A Standard Operating Procedure for LLM Based Method-Level Fault Localization"
+            }
+          },
+          {
+            "id": "565dad46ec420972",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Papers/SoapFL - A Standard Operating Procedure for LLM Based Method-Level Fault Localization.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from SoapFL - A Standard Operating Procedure for LLM Based Method-Level Fault Localization"
+            }
+          },
+          {
+            "id": "02c963544d8064ef",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c1322b65cd80f6a0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Research Papers/An empirical study of fault localization families and their combinations.md",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of An empirical study of fault localization families and their combinations"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "obsidian-kanban:Create new board": false
+    }
+  },
+  "active": "18a89c7e6149278c",
+  "lastOpenFiles": [
+    "Papers.base",
+    "Research Papers/An empirical study of fault localization families and their combinations.md",
+    "Projects/Improving SBFL through test generation/Toy Example.md",
+    "Research Papers/Understanding Code Changes Pratically with Small-Scale Language Models.md",
+    "Research Papers/YATE - The Role of Test Repair in LLM-Based Unit Test Generation.md",
+    "Research Papers/Test Intention Guided LLM-Based Unit Test Generation.md",
+    "Research Papers/LLM-based Unit Test Generation via Property Retrieval.md",
+    "Research Papers/ChatUniTest - A Framework for LLM-Based Test Generation.md",
+    "Research Papers/Automated Test Case Generation for Effective Spectrum-based Fault Localization.md",
+    "Research Papers/Test Case Generation Techniques for Fault Root Cause Localization.md",
+    "Research Papers/Test case purification for improving fault localization.md",
+    "Research Papers/Directed test generation for effective fault localization.md",
+    "Research Papers/Improving test suites for efficient fault localization.md",
+    "Research Papers/Model Checking-Enhanced Spectrum-Based Fault Localization.md",
+    "Research Papers/Semantic context based coincidental correct test cases detection for fault localization.md",
+    "Research Papers/On The Efficiency Of Combination Of Program Slicing and Spectrum-Based Fault Localization.md",
+    "Research Papers/An empirical study of fault localization in Python programs.md",
+    "Research Papers/New Ranking Formulas to Improve Spectrum Based Fault Localization Via Systematic Search.md",
+    "Research Papers/Coverage-Based Fault Localization in Haskell.md",
+    "Research Papers/You Cannot Fix What You Cannot Find! An Investigation of Fault Localization Bias in Benchmarking Automated Program Repair Systems.md",
+    "Research Papers/You Cannot Fix What You Cannot Find.md",
+    "Projects/Improving SBFL through test generation/Related Papers.md",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Lecture 2 - Introduction to Fuzzy Sets, Characteristics, and Measures.md",
+    "Images",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets",
+    "Research Papers/Improving fault localization with pre-training.md",
+    "Projects/Improving SBFL through test generation",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Lecture 1 - Introduction to Course.md",
+    "Projects/Improving SBFL through maximizing Basic Blocks.md",
+    "University of Alberta/Courses/ECE 720 - Software Engineering",
+    "University of Alberta/Courses",
+    "Projects.base",
+    "Code Snippets.base",
+    "Code Snippets",
+    "University of Alberta/Residence Assistant/Fall 2025 - Winter 2026",
+    "Projects/ReasonFL/Complete Algorithm.canvas",
+    "Projects/ReasonFL/Random Stuff.canvas",
+    "Canvas.canvas"
+  ]
+}
