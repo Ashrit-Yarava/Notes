@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research Papers/An empirical study of fault localization families and their combinations.md",
+                "file": "Code Snippets/GZoltar CLI Usage (For Defects4J).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "An empirical study of fault localization families and their combinations"
+              "title": "GZoltar CLI Usage (For Defects4J)"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317
+    "width": 297
   },
   "right": {
     "id": "70d662f750d58879",
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Research Papers/An empirical study of fault localization families and their combinations.md",
+                "file": "Code Snippets/GZoltar CLI Usage (For Defects4J).md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of An empirical study of fault localization families and their combinations"
+              "title": "Outline of GZoltar CLI Usage (For Defects4J)"
             }
           }
         ],
@@ -156,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,8 +171,11 @@
   },
   "active": "18a89c7e6149278c",
   "lastOpenFiles": [
-    "Papers.base",
+    "Code Snippets.base",
+    "Code Snippets/GZoltar CLI Usage (For Defects4J).md",
     "Research Papers/An empirical study of fault localization families and their combinations.md",
+    "Code Snippets/GZoltar CLI Usage.md",
+    "Papers.base",
     "Projects/Improving SBFL through test generation/Toy Example.md",
     "Research Papers/Understanding Code Changes Pratically with Small-Scale Language Models.md",
     "Research Papers/YATE - The Role of Test Repair in LLM-Based Unit Test Generation.md",
@@ -197,12 +201,9 @@
     "University of Alberta/Courses/ECE 624 - Fuzzy Sets",
     "Research Papers/Improving fault localization with pre-training.md",
     "Projects/Improving SBFL through test generation",
-    "University of Alberta/Courses/ECE 720 - Software Engineering/Lecture 1 - Introduction to Course.md",
-    "Projects/Improving SBFL through maximizing Basic Blocks.md",
     "University of Alberta/Courses/ECE 720 - Software Engineering",
     "University of Alberta/Courses",
     "Projects.base",
-    "Code Snippets.base",
     "Code Snippets",
     "University of Alberta/Residence Assistant/Fall 2025 - Winter 2026",
     "Projects/ReasonFL/Complete Algorithm.canvas",
