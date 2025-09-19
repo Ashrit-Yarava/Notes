@@ -8,6 +8,10 @@ properties:
 views:
   - type: table
     name: Table
+    filters:
+      and:
+        - file.hasTag("faultlocalization")
+        - file.hasTag("llm")
     order:
       - Read
       - file.name

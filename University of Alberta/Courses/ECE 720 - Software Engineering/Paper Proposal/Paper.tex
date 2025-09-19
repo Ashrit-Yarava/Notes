@@ -1,0 +1,107 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+%Template version as of 6/27/2024
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+\bibliographystyle{ieeetr}
+
+\begin{document}
+
+\title{Improving Coverage Based Fault Localization through LLM-based Test Generation}
+
+\author{\IEEEauthorblockN{Ashrit Reddy Yarava}
+\IEEEauthorblockA{\textit{Electrical and Computer Engineering} \\
+\textit{University of Alberta}\\
+Edmonton, Alberta \\
+yarava@ualberta.ca}}
+
+\maketitle
+
+\begin{abstract}
+Spectrum-based fault localization (SBFL) is one popular coverage based FL algorithm. It uses the test coverage to identify the most suspicious code elements. Other FL approaches (LLM, DL) also make use of the test suite to determine the faulty code elements. As a result, the quality of a test suite plays a major role in FL performance. Tests are usually written to maximize coverage and ignore their impact on FL. The proposed algorithm uses LLMs to introduce new unit tests to improve FL.
+\end{abstract}
+
+\begin{IEEEkeywords}
+test generation, llm, fault localization
+\end{IEEEkeywords}
+
+\section{Background}
+
+This section provides an overview of the relevant research and concepts related to the proposal.
+
+\subsection{Fault Localization}
+
+Fault localization (FL) aims to find the faulty elements in a codebase. There are a variety of paradigms for FL, ranging from LLMs, Mutations, and Deep Learning. One shared trait between these algorithms is that they rely on the test suite to some extent. As such, improvements to the test suite are likely to result in FL improvement.
+
+\subsubsection{LLM Based Fault Localization}
+
+LLMs are great for analyzing code. LLM based FL approaches identify behavior in failing tests and code to find faults. \cite{kang2024quantitative, cho2025cosmosfl} provides the LLM with tools to navigate the codebase. \cite{qin2025s} uses summarization to narrow down the fault from a class-level to method-level. These approaches make use of the failing tests. Generating more failing tests would add more information to the LLM.
+
+\subsubsection{Learning Based Fault Localization}
+
+Deep learning is also used for FL. In \cite{lou2021boosting}, the authors make use of a trained graph neural network to learn connections between methods. This approach makes use of the passing and failing tests. The proposed test generation algorithm would likely improve performance.
+
+\subsubsection{Mutation Based Fault Localization}
+
+This approach makes small changes to the codebase to identify faulty code. Mutations made to faulty code should not result in changes to test results. \cite{papadakis2015metallaxis} is a popular MBFL tool that makes use of this philosophy. Improvements to the tests would add more points of failure preventing incorrect answers.
+
+\subsubsection{Spectrum Based Fault Localization}
+
+SBFL is a coverage based FL algorithm that relies on the test coverage of passing and failing tests. Ranking functions such as Ochiai make use of these counts to assign suspiciousness. It works at different levels of granularity such as class, method or line level.
+
+A variety of algorithms make use of SBFL as the basis for tasks such as automated program repair (APR). In fact, \cite{liu2019you} finds that almost all APR tools make use of SBFL in the FL step. These approaches use SBFL due to the efficiency and speed that the algorithm offers. The paper also identifies that limited SBFL performance hinders APR. As such, improving SBFL is a key research field and has implications for a variety of other fields.
+
+\subsection{Test Generation for FL}
+
+\cite{baudry2006improving} introduced the idea of basic blocks, and their detrimental impact on FL. Basic blocks are sets of elements that have the same test coverage. In SBFL, having the same test coverage means having the same suspiciousness score. Large basic blocks can result in ties where a set of elements have equal suspiciousness. \cite{baudry2006improving} proposes that tests generated with FL in mind should aim to maximize basic blocks in the codebase. The authors tackle the problem of test generation for FL with genetic algorithms. While useful, genetic algorithms (GA) are unable to generate complex tests.
+
+Another explored approach \cite{xuan2014test} breaks down existing test cases to smaller subcomponents. Through this breakdown, the test cases are "purified." The increase in test cases also splits the execution paths increasing basic blocks.
+
+These existing approaches only test performance improvement in SBFL. They do not identify how test generation would impact other FL algorithms.
+
+\subsection{LLM-Based Test Generation}
+
+The advent of powerful LLMs such as ChatGPT and DeepSeek have seen their use in a variety of SWE tasks. \cite{chen2024chatunitest, wang2024hits, zhang2410llm} show that LLMs can generate complex tests and outperform classical approaches. These approaches focus on maximizing text coverage and ignore FL performance. These approaches also do not generate tests with a specific intent. \cite{nan2025test} tackles test generation with a given intent like the proposed approach.
+
+\subsection{Primary Contribution}
+
+While there is active research in test generation and FL, there is a gap on how to improve FL with test generation. The proposed algorithm evaluates how test generation can impact FL algorithms. Prior studies on the combination of test generation and FL only study SBFL. The proposed approach broadens the scope to other FL paradigms.
+
+\section{Planned Approach}
+
+The following section provides an overview of the algorithm, experimental design, and potential challenges the algorithm faces.
+
+\subsection{Overview of the Algorithm}
+
+The algorithm consists of three components. The first component, bug report generation, summarizes the failing tests and stack traces. Basic block identification and selection is the next step. It involves constructing basic blocks using the test coverage. The Ochiai function determines the suspiciousness scores for each basic block. The most suspicious basic block is then selected for test generation. The third step, test generation, generates a unit test for each method in the basic block. Failing tests are more valuable for FL than passing tests. As such, the step generates tests to search for a possible failing tests. The loop stops when a condition passes to ensure the algorithm does not waste energy. The LLM is also given the bug report to encourage generating fault-relevant tests. The algorithm is then evaluated on a variety of FL approaches.
+
+\subsection{Experimental Design}
+
+We test the algorithm on the Defects4J v3.0 \cite{ren2014defects4j} dataset, a collection of java projects. For each project, we record the original FL performance. We run the algorithm and record the changed FL performance to track improvement. We use the SBFL, AutoFL, Metallaxis, and GRACE algorithms for evaluation of test generation. We test FL performance on the top@$k$ and MFR metrics. Top@$k$ is the first $k$ most suspicious methods. MFR is the mean ranking of the highest ranked faulty method. We do not include the MAR metric since the algorithm only optimizes the first basic block. As such, it is likely that the first basic block might not contain all faulty methods. Finally, there will be an ablation study to identify the impact of components.
+
+\subsection{Tools and Techniques}
+
+We write the algorithm in Java and explore a variety of LLMs for the test generation step. We use SootUp and JavaParser for parsing the java code and use static analysis for test coverage.
+
+\subsection{Potential Challenges}
+
+There are a list of possible approaches for the stop condition in test generation. Each of these approaches should explored. The first approach involves comparing execution paths between existing and new tests. The second approach involves comparing the information in the prior and new test.
+
+Test generation with LLMs encounters errors in generation, usually leading to compilation failures. As seen in \cite{konstantinou2025yate}, LLMs are prone to minor compilation errors. We use a basic iterative approach to fix compilation errors but it is possible to run into errors. This approach might not be enough to have a large enough success rate.
+
+\section{Project Timeline}
+
+A rudimentary version of the algorithm is currently functional. The next step in implementation builds the fault-triggering test search loop. Different stop conditions for the search loop also need to be explored.
+
+Testing will begin with SBFL due to the current poor performance compared to other FL algorithms. Later on, different approaches will be used based on code available online.
+
+\bibliography{references.bib}
+
+\end{document}

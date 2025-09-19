@@ -13,5 +13,5 @@ The following papers aim to improve coverage based fault localization strategies
 
 
 The following papers, while not directly related to fault localization, demonstrate that SBFL is still used:
-[[You Cannot Fix What You Cannot Find]] - Conference on Software Testing, Verification and Validation
+[[You Cannot Fix What You Cannot Find! An Investigation of Fault Localization Bias in Benchmarking Automated Program Repair Systems]] - Conference on Software Testing, Verification and Validation
 -> Shows how a lot of the papers make use of SBFL. This is an analysis of the APR tools and demonstrates that *Ochiai* is almost ubiquitously used compared to other algorithms in APR pipelines.

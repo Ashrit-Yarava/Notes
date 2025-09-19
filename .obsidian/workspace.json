@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "a0140fafd12166fb",
+        "id": "d3e8555fcbb772de",
         "type": "tabs",
         "children": [
           {
-            "id": "18a89c7e6149278c",
+            "id": "e74bb1ebc1e496b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code Snippets/GZoltar CLI Usage (For Defects4J).md",
+                "file": "University of Alberta/Courses/ECE 720 - Software Engineering/Paper Proposal/Proposal - Improving Coverage Based Fault Localization through LLM-based Test Generation.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "GZoltar CLI Usage (For Defects4J)"
+              "title": "Proposal - Improving Coverage Based Fault Localization through LLM-based Test Generation"
+            }
+          },
+          {
+            "id": "eaec6f4d792ab82c",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Papers.base",
+                "viewName": "Table"
+              },
+              "icon": "lucide-table",
+              "title": "Papers"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "maximize",
+                "query": "tag:testgeneration",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -74,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Papers/SoapFL - A Standard Operating Procedure for LLM Based Method-Level Fault Localization.md",
+                "file": "Code Snippets/llama.cpp Server Initialization.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for SoapFL - A Standard Operating Procedure for LLM Based Method-Level Fault Localization"
+              "title": "Backlinks for llama.cpp Server Initialization"
             }
           },
           {
@@ -142,17 +158,15 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Snippets/GZoltar CLI Usage (For Defects4J).md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of GZoltar CLI Usage (For Defects4J)"
+              "title": "Outline"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -166,46 +180,57 @@
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "command-palette:Open command palette": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "publish:Publish changes...": false
     }
   },
-  "active": "18a89c7e6149278c",
+  "active": "eaec6f4d792ab82c",
   "lastOpenFiles": [
-    "Code Snippets.base",
-    "Code Snippets/GZoltar CLI Usage (For Defects4J).md",
-    "Research Papers/An empirical study of fault localization families and their combinations.md",
-    "Code Snippets/GZoltar CLI Usage.md",
-    "Papers.base",
-    "Projects/Improving SBFL through test generation/Toy Example.md",
-    "Research Papers/Understanding Code Changes Pratically with Small-Scale Language Models.md",
-    "Research Papers/YATE - The Role of Test Repair in LLM-Based Unit Test Generation.md",
-    "Research Papers/Test Intention Guided LLM-Based Unit Test Generation.md",
-    "Research Papers/LLM-based Unit Test Generation via Property Retrieval.md",
-    "Research Papers/ChatUniTest - A Framework for LLM-Based Test Generation.md",
-    "Research Papers/Automated Test Case Generation for Effective Spectrum-based Fault Localization.md",
-    "Research Papers/Test Case Generation Techniques for Fault Root Cause Localization.md",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Paper Proposal/references.bib.sb-6084bfaa-R1cDQS",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Paper Proposal/Paper.pdf",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Paper Proposal/references.bib",
     "Research Papers/Test case purification for improving fault localization.md",
-    "Research Papers/Directed test generation for effective fault localization.md",
+    "Papers.base",
+    "Research Papers/Test Intention Guided LLM-Based Unit Test Generation.md",
+    "Research Papers/YATE - The Role of Test Repair in LLM-Based Unit Test Generation.md",
+    "Research Papers/Boosting Coverage-Based Fault Localization via Graph-Based Representation Learning.md",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Paper Proposal/Paper~.tex",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Paper Proposal/Proposal - Improving Coverage Based Fault Localization through LLM-based Test Generation.md",
+    "Research Papers/COSMosFL - Ensemble of Small Language Models for Fault Localization.md",
+    "Research Papers/SoapFL - A Standard Operating Procedure for LLM Based Method-Level Fault Localization.md",
+    "Research Papers/A Quantitative and Qualitative Evaluation of LLM-Based Explainable Fault Localization.md",
+    "Research Papers/LLM-based Unit Test Generation via Property Retrieval.md",
+    "Research Papers/HITS - High-coverage LLM-based Unit Test Generation via Method Slicing.md",
+    "Research Papers/ChatUniTest - A Framework for LLM-Based Test Generation.md",
     "Research Papers/Improving test suites for efficient fault localization.md",
-    "Research Papers/Model Checking-Enhanced Spectrum-Based Fault Localization.md",
-    "Research Papers/Semantic context based coincidental correct test cases detection for fault localization.md",
-    "Research Papers/On The Efficiency Of Combination Of Program Slicing and Spectrum-Based Fault Localization.md",
-    "Research Papers/An empirical study of fault localization in Python programs.md",
-    "Research Papers/New Ranking Formulas to Improve Spectrum Based Fault Localization Via Systematic Search.md",
-    "Research Papers/Coverage-Based Fault Localization in Haskell.md",
-    "Research Papers/You Cannot Fix What You Cannot Find! An Investigation of Fault Localization Bias in Benchmarking Automated Program Repair Systems.md",
-    "Research Papers/You Cannot Fix What You Cannot Find.md",
-    "Projects/Improving SBFL through test generation/Related Papers.md",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Paper Proposal/Paper Proposal.hemingway",
+    "University of Alberta/BlendX Meeting Notes.md",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Paper Proposal/Paper.tex",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Paper Proposal",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Untitled.md",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Lecture 4 - Development of Software.md",
+    "University of Alberta/Courses/ECE 720 - Software Engineering/Paper Presentation - What Makes a Good Bug Report?.md",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Lecture 5 - More Fuzzy Set Operations and Fuzzy Relations.md",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Lecture 6 - Fuzzy Set Transformations and Fuzzy Arithmetic.md",
+    "Topics/Algorithms/Epsilon-Greedy Search.md",
+    "Topics/Algorithms",
+    "Topics/Chess/Caro-Kann Defense.md",
     "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Lecture 2 - Introduction to Fuzzy Sets, Characteristics, and Measures.md",
-    "Images",
-    "University of Alberta/Courses/ECE 624 - Fuzzy Sets",
-    "Research Papers/Improving fault localization with pre-training.md",
-    "Projects/Improving SBFL through test generation",
-    "University of Alberta/Courses/ECE 720 - Software Engineering",
-    "University of Alberta/Courses",
-    "Projects.base",
-    "Code Snippets",
-    "University of Alberta/Residence Assistant/Fall 2025 - Winter 2026",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Lecture 3 - Interval Computing.md",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Lecture 4 - Relations and Operations on Sets.md",
+    "Research Papers/Automated Test Case Generation for Effective Spectrum-based Fault Localization.md",
+    "Research Papers/Directed test generation for effective fault localization.md",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Homework Assignments/HW1.pdf",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Homework Assignments/images/1.5_drastic.png",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Homework Assignments/images/Screenshot 2025-09-15 at 5.46.44 PM.png",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Homework Assignments/HW1~.tex",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Homework Assignments/images/Screenshot 2025-09-12 at 12.03.43 AM.png",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Homework Assignments/images/1.5_lukasiewicz.png",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Homework Assignments/images/Screenshot 2025-09-12 at 12.03.11 AM.png",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Homework Assignments/images/1.5_product.png",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Homework Assignments/images/Screenshot 2025-09-12 at 12.02.36 AM.png",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Homework Assignments/images/1.5_min.png",
+    "University of Alberta/Courses/ECE 624 - Fuzzy Sets/Homework Assignments/images/Screenshot 2025-09-12 at 12.01.11 AM.png",
     "Projects/ReasonFL/Complete Algorithm.canvas",
     "Projects/ReasonFL/Random Stuff.canvas",
     "Canvas.canvas"
